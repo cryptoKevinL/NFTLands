@@ -1,4 +1,4 @@
-const PinataJWT = "Your Pinata JWT"
+const PinataJWT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI2NDBhOTM5Ni1lYzE3LTQ5MWEtYmY4YS1jNDJiMmNiY2VjZjMiLCJlbWFpbCI6ImVtYWlsa2V2aW5sYXJzb25AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBpbl9wb2xpY3kiOnsicmVnaW9ucyI6W3siaWQiOiJOWUMxIiwiZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjF9XSwidmVyc2lvbiI6MX0sIm1mYV9lbmFibGVkIjpmYWxzZX0sImF1dGhlbnRpY2F0aW9uVHlwZSI6InNjb3BlZEtleSIsInNjb3BlZEtleUtleSI6IjMyODhmMDI5NzViODAzMDA2NWQzIiwic2NvcGVkS2V5U2VjcmV0IjoiYmYxZTdkZTk0ODZkNTM0MTk3MjRjZTFmODdjNWJiYWQ2ODFiZWQ1NjI0NGIyMjhkY2JlOWVmMmE0M2U1NjdmZiIsImlhdCI6MTY0NjYyNDk3OX0.32932lVRbXTzxdjWqRfreospQePefFHO-BqJu-_asLA"
 const fs = require("fs");
 const axios = require("axios");
 const FormData = require("form-data");
@@ -7,6 +7,7 @@ const basePathConverter = require("base-path-converter");
 
 async function main() {
   try {
+    //const path = "./treasuremaps";
     const path = "./metadata";
     const url = `https://api.pinata.cloud/pinning/pinFileToIPFS`;
 

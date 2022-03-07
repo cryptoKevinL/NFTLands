@@ -1,8 +1,9 @@
 const fs = require("fs");
 const faker = require('faker');
 const TOTAL = 4;
-const baseCID = "Your CID for your Base URI";
-const gatewayCustomDomain = "Your custom dedicated gateway domain"
+//const baseCID = "bafybeigsh3r3hdjflwe4tzwsz4pggmnd6ogrx65vlwqeyrwnmk2ykaqyr4";
+const baseCID = "QmZ6MKWDTYEANVpp9c2TaozBQGPAcbwDxjRkY49SM9LGBY";
+const gatewayCustomDomain = "nft_lands.mypinata.cloud"
 
 const generateRandomMetadata = (id) => {
   return {
