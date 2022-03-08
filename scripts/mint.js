@@ -2,8 +2,8 @@ const hre = require("hardhat");
 
 async function main() {
 
-  const PFPinata = await hre.ethers.getContractFactory("PFPinatas");
-  const contract = PFPinata.attach("0xBE1df589c84008ec2bf828Fc8F2a3116Aee79D8f");
+  const NFTLand = await hre.ethers.getContractFactory("NFTLands");
+  const contract = NFTLand.attach("0x849a25c7B475D68c897A33B25cd2E41B58E2C391");
   const mintedNft = await contract.mintTo("0x35f71FEf659f3bC898433603D575DceCD6e7663c");
 
   console.log("token minted", mintedNft);

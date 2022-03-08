@@ -8,7 +8,7 @@ const basePathConverter = require("base-path-converter");
 
 async function main() {
   try {
-    const path = "./art";
+    const path = "./metadata";
     const url = `https://api.pinata.cloud/pinning/pinFileToIPFS`;
 
     recursive.readdirr(path, function (err, dirs, files) {
@@ -20,7 +20,7 @@ async function main() {
       });
 
       const metadata = JSON.stringify({
-        name: "NFTLands_art",
+        name: "NFTLands_metadata",
       });
       data.append("pinataMetadata", metadata);
 

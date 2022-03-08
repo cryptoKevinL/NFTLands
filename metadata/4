@@ -1,1 +1,20 @@
-{"name":"Mr. Jodi Johnson","description":"Veritatis quis fugit et voluptatem. Quod sunt numquam eveniet. Blanditiis est laboriosam assumenda et aut culpa voluptas aut quis. Exercitationem est et eos voluptas.","image":"nft_lands.mypinata.cloud/ipfs/QmZ6MKWDTYEANVpp9c2TaozBQGPAcbwDxjRkY49SM9LGBY/4"}
+{
+ "name": "NFT_Lands_Test #4",
+ "description": "Test for NFT Lands",
+ "image": "zip/4.png",
+ "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/4.png",
+ "dna": "d2cadce7e57e57bb0bac0b19dc9d2ce0ea77f63d",
+ "edition": 4,
+ "date": 1646771971,
+ "attributes": [
+  {
+   "trait_type": "Background",
+   "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+  },
+  {
+   "trait_type": "PlotID",
+   "value": "Screen Shot 2022-03-08 at 12.26.20 PM.png"
+  }
+ ],
+ "compiler": "generate-nft.online"
+}

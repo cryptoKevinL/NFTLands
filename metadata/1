@@ -1,1 +1,20 @@
-{"name":"Danny Christiansen","description":"Voluptas aliquam officia deleniti. Atque culpa nihil id dolorem. Officiis error similique non voluptatem. Vitae vel incidunt voluptas. Et dolorem eius est aut fuga atque autem ea sint. Veniam quia tempore impedit eum neque.","image":"nft_lands.mypinata.cloud/ipfs/QmZ6MKWDTYEANVpp9c2TaozBQGPAcbwDxjRkY49SM9LGBY/1"}
+{
+ "name": "NFT_Lands_Test #1",
+ "description": "Test for NFT Lands",
+ "image": "zip/1.png",
+ "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/1.png",
+ "dna": "5b9e2906ff4779d42d96f4c2110efd984f24c199",
+ "edition": 1,
+ "date": 1646771969,
+ "attributes": [
+  {
+   "trait_type": "Background",
+   "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+  },
+  {
+   "trait_type": "PlotID",
+   "value": "Screen Shot 2022-03-08 at 12.26.33 PM.png"
+  }
+ ],
+ "compiler": "generate-nft.online"
+}

@@ -1,7 +1,7 @@
 {
   "name": "pfp-nfts",
   "version": "1.0.0",
-  "description": "",
+  "description": "To run, clone this repo then run `npm install`.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,10 +25,22 @@
     "@pinata/sdk": "^1.1.23",
     "axios": "^0.21.4",
     "base-path-converter": "^1.0.2",
+    "dotenv": "^16.0.0",
     "ethereumjs-util": "^7.1.4",
     "faker": "^5.5.3",
     "next-iron-session": "^4.2.0",
     "recursive-fs": "^2.1.0",
     "uuid": "^8.3.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptoKevinL/nft-gated-content.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cryptoKevinL/nft-gated-content/issues"
+  },
+  "homepage": "https://github.com/cryptoKevinL/nft-gated-content#readme"
 }

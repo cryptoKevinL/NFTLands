@@ -1,0 +1,206 @@
+{
+ "name": "NFT_Lands_Test",
+ "description": "Test for NFT Lands",
+ "collection": [
+  {
+   "name": "NFT_Lands_Test #1",
+   "description": "Test for NFT Lands",
+   "image": "zip/1.png",
+   "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/1.png",
+   "dna": "5b9e2906ff4779d42d96f4c2110efd984f24c199",
+   "edition": 1,
+   "date": 1646771969,
+   "attributes": [
+    {
+     "trait_type": "Background",
+     "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+    },
+    {
+     "trait_type": "PlotID",
+     "value": "Screen Shot 2022-03-08 at 12.26.33 PM.png"
+    }
+   ],
+   "compiler": "generate-nft.online"
+  },
+  {
+   "name": "NFT_Lands_Test #2",
+   "description": "Test for NFT Lands",
+   "image": "zip/2.png",
+   "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/2.png",
+   "dna": "1ea64cbc66bc7b70947c191dd371a2ddcfa1d006",
+   "edition": 2,
+   "date": 1646771970,
+   "attributes": [
+    {
+     "trait_type": "Background",
+     "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+    },
+    {
+     "trait_type": "PlotID",
+     "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+    }
+   ],
+   "compiler": "generate-nft.online"
+  },
+  {
+   "name": "NFT_Lands_Test #3",
+   "description": "Test for NFT Lands",
+   "image": "zip/3.png",
+   "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/3.png",
+   "dna": "2d6e0276608cec935306f2d8970667c547e18cfa",
+   "edition": 3,
+   "date": 1646771971,
+   "attributes": [
+    {
+     "trait_type": "Background",
+     "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+    },
+    {
+     "trait_type": "PlotID",
+     "value": "Screen Shot 2022-03-08 at 12.26.24 PM.png"
+    }
+   ],
+   "compiler": "generate-nft.online"
+  },
+  {
+   "name": "NFT_Lands_Test #4",
+   "description": "Test for NFT Lands",
+   "image": "zip/4.png",
+   "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/4.png",
+   "dna": "d2cadce7e57e57bb0bac0b19dc9d2ce0ea77f63d",
+   "edition": 4,
+   "date": 1646771971,
+   "attributes": [
+    {
+     "trait_type": "Background",
+     "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+    },
+    {
+     "trait_type": "PlotID",
+     "value": "Screen Shot 2022-03-08 at 12.26.20 PM.png"
+    }
+   ],
+   "compiler": "generate-nft.online"
+  },
+  {
+   "name": "NFT_Lands_Test #5",
+   "description": "Test for NFT Lands",
+   "image": "zip/5.png",
+   "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/5.png",
+   "dna": "d6b362aa17527da5b61cf636e05df32d73307764",
+   "edition": 5,
+   "date": 1646771972,
+   "attributes": [
+    {
+     "trait_type": "Background",
+     "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+    },
+    {
+     "trait_type": "PlotID",
+     "value": "Screen Shot 2022-03-08 at 12.26.35 PM.png"
+    }
+   ],
+   "compiler": "generate-nft.online"
+  },
+  {
+   "name": "NFT_Lands_Test #6",
+   "description": "Test for NFT Lands",
+   "image": "zip/6.png",
+   "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/6.png",
+   "dna": "ce4c78dff93292070eda031321a9f1c511f1d1bf",
+   "edition": 6,
+   "date": 1646771973,
+   "attributes": [
+    {
+     "trait_type": "Background",
+     "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+    },
+    {
+     "trait_type": "PlotID",
+     "value": "Screen Shot 2022-03-08 at 12.26.13 PM.png"
+    }
+   ],
+   "compiler": "generate-nft.online"
+  },
+  {
+   "name": "NFT_Lands_Test #7",
+   "description": "Test for NFT Lands",
+   "image": "zip/7.png",
+   "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/7.png",
+   "dna": "de50d8517a8e6ba001521527b75df1ce3145e6c0",
+   "edition": 7,
+   "date": 1646771974,
+   "attributes": [
+    {
+     "trait_type": "Background",
+     "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+    },
+    {
+     "trait_type": "PlotID",
+     "value": "Screen Shot 2022-03-08 at 12.26.27 PM.png"
+    }
+   ],
+   "compiler": "generate-nft.online"
+  },
+  {
+   "name": "NFT_Lands_Test #8",
+   "description": "Test for NFT Lands",
+   "image": "zip/8.png",
+   "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/8.png",
+   "dna": "ae711294e8fb99b0bb31b92a64a4e5fc9607a7bb",
+   "edition": 8,
+   "date": 1646771975,
+   "attributes": [
+    {
+     "trait_type": "Background",
+     "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+    },
+    {
+     "trait_type": "PlotID",
+     "value": "Screen Shot 2022-03-08 at 12.26.30 PM.png"
+    }
+   ],
+   "compiler": "generate-nft.online"
+  },
+  {
+   "name": "NFT_Lands_Test #9",
+   "description": "Test for NFT Lands",
+   "image": "zip/9.png",
+   "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/9.png",
+   "dna": "9e80f218e12998db1386ee3995afaa615fed3895",
+   "edition": 9,
+   "date": 1646771975,
+   "attributes": [
+    {
+     "trait_type": "Background",
+     "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+    },
+    {
+     "trait_type": "PlotID",
+     "value": "Screen Shot 2022-03-08 at 12.26.09 PM.png"
+    }
+   ],
+   "compiler": "generate-nft.online"
+  },
+  {
+   "name": "NFT_Lands_Test #10",
+   "description": "Test for NFT Lands",
+   "image": "zip/10.png",
+   "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/10.png",
+   "dna": "39d9a8f9988e8c918f8864832cfa57e7b6d6bd91",
+   "edition": 10,
+   "date": 1646771976,
+   "attributes": [
+    {
+     "trait_type": "Background",
+     "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+    },
+    {
+     "trait_type": "PlotID",
+     "value": "Screen Shot 2022-03-08 at 12.26.17 PM.png"
+    }
+   ],
+   "compiler": "generate-nft.online"
+  }
+ ]
+}

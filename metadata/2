@@ -1,1 +1,20 @@
-{"name":"Kim Stark","description":"Unde asperiores atque quo atque perspiciatis omnis nihil dolorem accusantium. Labore saepe dolorem et tenetur dignissimos rerum velit. Quia blanditiis cumque quo. Dolor repellat in. Dolores mollitia animi non et et architecto recusandae labore cumque.","image":"nft_lands.mypinata.cloud/ipfs/QmZ6MKWDTYEANVpp9c2TaozBQGPAcbwDxjRkY49SM9LGBY/2"}
+{
+ "name": "NFT_Lands_Test #2",
+ "description": "Test for NFT Lands",
+ "image": "zip/2.png",
+ "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/2.png",
+ "dna": "1ea64cbc66bc7b70947c191dd371a2ddcfa1d006",
+ "edition": 2,
+ "date": 1646771970,
+ "attributes": [
+  {
+   "trait_type": "Background",
+   "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+  },
+  {
+   "trait_type": "PlotID",
+   "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+  }
+ ],
+ "compiler": "generate-nft.online"
+}

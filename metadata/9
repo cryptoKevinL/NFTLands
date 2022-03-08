@@ -1,0 +1,20 @@
+{
+ "name": "NFT_Lands_Test #9",
+ "description": "Test for NFT Lands",
+ "image": "zip/9.png",
+ "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/9.png",
+ "dna": "9e80f218e12998db1386ee3995afaa615fed3895",
+ "edition": 9,
+ "date": 1646771975,
+ "attributes": [
+  {
+   "trait_type": "Background",
+   "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+  },
+  {
+   "trait_type": "PlotID",
+   "value": "Screen Shot 2022-03-08 at 12.26.09 PM.png"
+  }
+ ],
+ "compiler": "generate-nft.online"
+}

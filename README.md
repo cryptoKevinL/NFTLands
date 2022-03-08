@@ -1,11 +1,8 @@
-# Gated Content Access With NFTs and Pinata Submarining
+# NFT Worlds Land Parceling, and Content Access With Exclusive Ownership Content
 
-This is the repository for the code that goes along with this tutorial: 
+To run, clone this repo then run `npm install`. 
 
-LINK HERE
+To run the client (next.js) app, `cd nft_lands_client` then run `npm install` and `npm run dev`. 
 
-Before you begin, clone this repo then run `npm install`. 
-
-To run the client (next.js) app, `cd pfp-client` then run `npm install` and `npm run dev`. 
-
-Keep in mind that all variables from the tutorial are undefined. So please follow along in the tutorial and add them in in the right places. 
+Keep in mind that a .env file is needed with API private keys, we use Alchemy here. 
+API Keys for the Professional Pinata Plan which includes Submarine functionality is required to run the server.

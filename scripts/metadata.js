@@ -1,8 +1,8 @@
+require("dotenv").config();
 const fs = require("fs");
 const faker = require('faker');
 const TOTAL = 4;
-//const baseCID = "bafybeigsh3r3hdjflwe4tzwsz4pggmnd6ogrx65vlwqeyrwnmk2ykaqyr4";
-const baseCID = "QmZ6MKWDTYEANVpp9c2TaozBQGPAcbwDxjRkY49SM9LGBY";
+const baseCID = process.env.BASE_CID;
 const gatewayCustomDomain = "nft_lands.mypinata.cloud"
 
 const generateRandomMetadata = (id) => {

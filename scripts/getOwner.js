@@ -2,8 +2,8 @@ const hre = require("hardhat");
 
 async function main() {
 
-  const PFPinata = await hre.ethers.getContractFactory("PFPinatas");
-  const contract = PFPinata.attach("0xaECD51d963f2299F9d4DE58B184191789C03Fff1");
+  const NFTLand = await hre.ethers.getContractFactory("NFTLands");
+  const contract = NFTLand.attach("0x849a25c7B475D68c897A33B25cd2E41B58E2C391");
   const uri = await contract.tokenURI(1);
   const owner = await contract.ownerOf(1);
 

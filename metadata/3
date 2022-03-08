@@ -1,1 +1,20 @@
-{"name":"Ms. Isabel Roberts","description":"Perferendis similique et. Quidem officia amet rerum sed. Et eum sunt ipsum nihil fugiat accusamus dolor nemo. Molestiae deserunt asperiores dolor qui voluptatem voluptatibus.","image":"nft_lands.mypinata.cloud/ipfs/QmZ6MKWDTYEANVpp9c2TaozBQGPAcbwDxjRkY49SM9LGBY/3"}
+{
+ "name": "NFT_Lands_Test #3",
+ "description": "Test for NFT Lands",
+ "image": "zip/3.png",
+ "external_url": "https://nft_lands.mypinata.cloud/ipfs/QmdVfxLv7PJHhdZ5x2QMvXFWLrokYQXBKgx1Mx9C4Hogo2/3.png",
+ "dna": "2d6e0276608cec935306f2d8970667c547e18cfa",
+ "edition": 3,
+ "date": 1646771971,
+ "attributes": [
+  {
+   "trait_type": "Background",
+   "value": "Screen Shot 2022-03-08 at 12.15.50 PM.png"
+  },
+  {
+   "trait_type": "PlotID",
+   "value": "Screen Shot 2022-03-08 at 12.26.24 PM.png"
+  }
+ ],
+ "compiler": "generate-nft.online"
+}

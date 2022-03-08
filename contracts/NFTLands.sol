@@ -1,4 +1,4 @@
-// contracts/PFPinatas.sol
+// contracts/NFTLands.sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -6,12 +6,12 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract PFPinatas is ERC721 {
+contract NFTLands is ERC721 {
     using Strings for uint256;
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
     string private baseURI;
-    constructor(string memory baseUri) ERC721("PFPinatas", "PFPP") {
+    constructor(string memory baseUri) ERC721("NFTLands", "NFTL") {
         baseURI = baseUri;
     }
 
