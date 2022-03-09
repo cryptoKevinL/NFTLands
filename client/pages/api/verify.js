@@ -44,18 +44,16 @@ export default withSession(async (req, res) => {
             }
           }
 
-          //const totalMinted = await contract.totalSupply(); //TODO: of course make this more - using 10 for test
-          const totalMinted = 2;
+          //Returns a BigNum, so to use it in for loop we need to convert to Number
+          const totalSupplyVal = await contract.totalSupply(); //TODO: of course make this more - using max 10 for test
+          const totalMinted = Number(totalSupplyVal);
 
           //Should we add a function to the contract to return the tokens owned given an address?
           //TODO: if there a multiple tokens owned by 1 owner, display them all.
           let displayIndex = 1;
           for(let idx=1; idx<=totalMinted; idx++){
             const owner = await contract.ownerOf(idx);
-            //console.log(owner);
-            //console.log(addr);
             if(addr.toLowerCase() === owner.toLowerCase()){
-              console.log(idx);
               displayIndex = idx;
               break;
             }
