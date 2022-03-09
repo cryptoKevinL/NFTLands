@@ -4,7 +4,7 @@ import {ethers} from "ethers";
 import { v4 as uuidv4 } from 'uuid';
 import { withIronSession } from 'next-iron-session';
 const abi = require("../../NFTLands.json").abi;
-const contractAddress = "0xBE1df589c84008ec2bf828Fc8F2a3116Aee79D8f";
+const contractAddress = "0xac18c8f477E0B86BEc4aD053be7f67132310A397";
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 const urlV2API = `https://managed.mypinata.cloud/api/v1`;
 const API_KEY = process.env.PINATA_V2_API_KEY;
@@ -43,8 +43,23 @@ export default withSession(async (req, res) => {
               'Content-Type': 'application/json'
             }
           }
-          const owner = await contract.ownerOf(1);
-          console.log({owner});
+
+          //const totalMinted = await contract.totalSupply(); //TODO: of course make this more - using 10 for test
+          const totalMinted = 2;
+
+          //Should we add a function to the contract to return the tokens owned given an address?
+          //TODO: if there a multiple tokens owned by 1 owner, display them all.
+          let displayIndex = 1;
+          for(let idx=1; idx<=totalMinted; idx++){
+            const owner = await contract.ownerOf(idx);
+            //console.log(owner);
+            //console.log(addr);
+            if(addr.toLowerCase() === owner.toLowerCase()){
+              console.log(idx);
+              displayIndex = idx;
+              break;
+            }
+          }
 
           //  Generate Access Token
           const content = await axios.get(`${urlV2API}/content`, config)
@@ -61,10 +76,10 @@ export default withSession(async (req, res) => {
              //console.log(contentFolderItems);
              const { data } = contentFolderItems;
              const { items } = data;
-             console.log(items);
+             //console.log(items);
              //originalname: 'images/SampleTreasureMap3.png',
-             idForDisplay = items.find(i => i.originalname === "images/SampleTreasureMap1.png");
-             console.log(idForDisplay);
+             idForDisplay = items.find(i => i.originalname === `images/SampleTreasureMap${displayIndex}.png`);
+             //console.log(idForDisplay);
           }
           const body = {
             timeoutSeconds: 3600, 
@@ -72,8 +87,8 @@ export default withSession(async (req, res) => {
           }
           //console.log(body);
           const token = await axios.post(`${urlV2API}/auth/content/jwt`, body, config);
-	  //console.log(token);
-          return res.send(`${GATEWAY_URL}/ipfs/${CID}/SampleTreasureMap1.png?accessToken=${token.data}`);
+	        //console.log(token);
+          return res.send(`${GATEWAY_URL}/ipfs/${CID}/SampleTreasureMap${displayIndex}.png?accessToken=${token.data}`);
         } else {
           return res.status(401).send("You aren't an NFT Lands Owner");
         }

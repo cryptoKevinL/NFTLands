@@ -4,7 +4,7 @@ async function main() {
 
   const NFTLand = await hre.ethers.getContractFactory("NFTLands");
   const contract = NFTLand.attach("0xac18c8f477E0B86BEc4aD053be7f67132310A397");
-  const mintedNft = await contract.mintTo("0x35f71FEf659f3bC898433603D575DceCD6e7663c");
+  const mintedNft = await contract.mintTo("0x0Db0448c95cad6D82695aC27022D20633C81b387");
 
   console.log("token minted", mintedNft);
 }
