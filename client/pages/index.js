@@ -3,10 +3,16 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import * as util from "ethereumjs-util";
+import {ethers} from "ethers";
+
+const abi = require("../NFTLands.json").abi;
 
 export default function Home() {
   const [ethereum, setEthereum] = useState(null);
   const [isNFTLand, setIsNFTLand] = useState(null);
+  const [isOwnPlot, setIsOwnPlot] = useState(null);
+  const [plotUrl, setPlotUrl] = useState(null);
   const [secretUrl, setSecretUrl] = useState(null);
   useEffect(() => {
     if (typeof window.ethereum !== "undefined") {
@@ -22,7 +28,7 @@ export default function Home() {
     const messageToSign = await axios.get("/api/verify");
     const accounts = await ethereum.request({ method: "eth_requestAccounts" });
     const account = accounts[0];
-    console.log(account);
+    //console.log(account);
     const signedData = await ethereum.request({
       method: "personal_sign",
       params: [JSON.stringify(messageToSign.data), account, messageToSign.data.id],
@@ -43,6 +49,61 @@ export default function Home() {
       }
     }
   };
+  const handleBuyPlot = async () => {
+    console.log("1");
+    const contractAddress = "0x67beb2f756f9a0191b79b6997005272f149bcb9F"; //Mumbai 
+    const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
+    //const provider = await new ethers.providers.JsonRpcProvider(`https://polygon-mumbai.g.alchemy.com/v2/${ALCHEMY_API_KEY}`);
+    console.log("1");
+
+    const { ethereum } = window;
+    const provider = new ethers.providers.Web3Provider(ethereum);
+    const signer = provider.getSigner();
+    const nftContract = new ethers.Contract(
+      contractAddress,
+      abi,
+      signer
+    );
+
+    const accounts = await ethereum.request({ method: "eth_requestAccounts" });
+    const account = accounts[0];
+    let nftTx = await nftContract.mintTo(account);
+    console.log('Mining....', nftTx.hash);
+    let tx = await nftTx.wait();
+    console.log('Mined!', tx)
+    let event = tx.events[0]
+    let value = event.args[2]
+    let tokenId = value.toNumber();
+
+    console.log(
+      `Mined, see transaction: https://mumbai.polyscan.io/tx/${nftTx.hash}`
+    )
+
+    // //  First we get the message to sign back from the server
+    // const messageToSign = await axios.get("/api/verify");
+    // const accounts = await ethereum.request({ method: "eth_requestAccounts" });
+    // const account = accounts[0];
+    // //console.log(account);
+    // const signedData = await ethereum.request({
+    //   method: "personal_sign",
+    //   params: [JSON.stringify(messageToSign.data), account, messageToSign.data.id],
+    // });
+    // try {
+    //   const res = await axios.post("/api/mint", {
+    //     address: account,
+    //     signature: signedData
+    //   });
+    //   const url = res.data;
+    //   console.log(url);
+    //   setIsOwnPlot(true);
+    //   setPlottUrl(url);
+    // } catch (error) {
+    //   console.log(error);
+    //   if (error.response && error.response.status === 401) {
+    //     setIsOwnPlot(false);
+    //   }
+    // }
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -57,6 +118,24 @@ export default function Home() {
           Members get access to a Treasure Map!
           Please sign the MetaMask verification to prove ownership.
         </p>
+        {isOwnPlot === false ? (
+          <div>
+            <h4>Purchase an NFT Land plot to gain access to personalized content!</h4>
+            <img
+              src="https://media.giphy.com/media/SWwXbEiVJ5z1gsjf5N/giphy.gif"
+              alt="No NFT Land Owned"
+            />
+          </div>
+        ) : isOwnPlot === true ? (
+          <div style={{textAlign: "center"}}>
+            <h4>Here is your New Plot of Land:</h4>
+            <img style={{maxWidth: "90%"}} src={plotUrl} alt="Thanks for your purchase today." />
+          </div>
+        ) : (
+          <button className={styles.btn} onClick={handleBuyPlot}>
+            Buy Next Plot
+          </button>
+        )}
         {isNFTLand === false ? (
           <div>
             <h4>Purchase an NFT Land plot to gain access to personalized content!</h4>
