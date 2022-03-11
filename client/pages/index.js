@@ -97,7 +97,7 @@ export default function Home() {
         {isOwnPlot === false ? (
           <div>
             <h4>Purchase an NFT Land plot to gain access to personalized content!</h4>
-            <img
+            <Image
               src="https://media.giphy.com/media/SWwXbEiVJ5z1gsjf5N/giphy.gif"
               alt="No NFT Land Owned"
             />
@@ -116,7 +116,7 @@ export default function Home() {
         {isNFTLand === false ? (
           <div>
             <h4>Purchase an NFT Land plot to gain access to personalized content!</h4>
-            <img
+            <Image
               src="https://media.giphy.com/media/SWwXbEiVJ5z1gsjf5N/giphy.gif"
               alt="No NFT Land Owned"
             />
@@ -124,7 +124,7 @@ export default function Home() {
         ) : isNFTLand === true ? (
           <div style={{textAlign: "center"}}>
             <h4>Here is your personalized Treasure Map:</h4>
-            <img style={{maxWidth: "90%"}} src={secretUrl} alt="Thanks for being a member." />
+            <Image style={{maxWidth: "90%"}} src={secretUrl} alt="Thanks for being a member." />
           </div>
         ) : (
           <button className={styles.btn} onClick={handleProveIt}>

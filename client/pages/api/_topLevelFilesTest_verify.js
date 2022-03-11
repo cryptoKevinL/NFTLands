@@ -3,7 +3,7 @@ import * as util from "ethereumjs-util";
 import {ethers} from "ethers";
 import { v4 as uuidv4 } from 'uuid';
 import { withIronSession } from 'next-iron-session';
-const abi = require("../../NFT_Lands.json").abi;
+const abi = require("../../NFTLands.json").abi;
 const contractAddress = "0xBE1df589c84008ec2bf828Fc8F2a3116Aee79D8f";
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 const urlV2API = `https://managed.mypinata.cloud/api/v1`;
