@@ -50,12 +50,8 @@ export default function Home() {
     }
   };
   const handleBuyPlot = async () => {
-    console.log("1");
     const contractAddress = "0x67beb2f756f9a0191b79b6997005272f149bcb9F"; //Mumbai 
     const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
-    //const provider = await new ethers.providers.JsonRpcProvider(`https://polygon-mumbai.g.alchemy.com/v2/${ALCHEMY_API_KEY}`);
-    console.log("1");
-
     const { ethereum } = window;
     const provider = new ethers.providers.Web3Provider(ethereum);
     const signer = provider.getSigner();
@@ -76,33 +72,13 @@ export default function Home() {
     let tokenId = value.toNumber();
 
     console.log(
-      `Mined, see transaction: https://mumbai.polyscan.io/tx/${nftTx.hash}`
+      `Mined, see transaction: https://mumbai.polyscan.com/tx/${nftTx.hash}`
     )
 
-    // //  First we get the message to sign back from the server
-    // const messageToSign = await axios.get("/api/verify");
-    // const accounts = await ethereum.request({ method: "eth_requestAccounts" });
-    // const account = accounts[0];
-    // //console.log(account);
-    // const signedData = await ethereum.request({
-    //   method: "personal_sign",
-    //   params: [JSON.stringify(messageToSign.data), account, messageToSign.data.id],
-    // });
-    // try {
-    //   const res = await axios.post("/api/mint", {
-    //     address: account,
-    //     signature: signedData
-    //   });
-    //   const url = res.data;
-    //   console.log(url);
-    //   setIsOwnPlot(true);
-    //   setPlottUrl(url);
-    // } catch (error) {
-    //   console.log(error);
-    //   if (error.response && error.response.status === 401) {
-    //     setIsOwnPlot(false);
-    //   }
-    // }
+    const url = "https://testnets.opensea.io/assets/mumbai/" + contractAddress + "/" + tokenId;
+    console.log("view your new land on OpenSea! - " + url);
+    setIsOwnPlot(true);
+    setPlotUrl(url);
   };
   return (
     <div className={styles.container}>
@@ -128,8 +104,9 @@ export default function Home() {
           </div>
         ) : isOwnPlot === true ? (
           <div style={{textAlign: "center"}}>
-            <h4>Here is your New Plot of Land:</h4>
-            <img style={{maxWidth: "90%"}} src={plotUrl} alt="Thanks for your purchase today." />
+            <h4>Enjoy Your New Land Purchase!</h4>
+            <a href={plotUrl}>Click Here to View Your New Plot of Land on OpenSea</a>
+            <div></div>
           </div>
         ) : (
           <button className={styles.btn} onClick={handleBuyPlot}>
