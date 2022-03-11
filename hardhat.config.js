@@ -30,10 +30,15 @@ module.exports = {
       accounts: [process.env.RINKEBY_PRIVATE_KEY],
       gasMultiplier: 2
     },
+    mumbai: {
+      url: process.env.POLYGON_URL,
+      accounts: [process.env.POLYGON_PRIVATE_KEY]
+    }
   },
   etherscan: {
-    apiKey: {
-      rinkeby: process.env.ETHERSCAN_API_KEY
-    }
+    //apiKey: {
+      //rinkeby: process.env.ETHERSCAN_API_KEY,
+    //}
+    apiKey: process.env.POLYSCAN_API_KEY
   }
 };

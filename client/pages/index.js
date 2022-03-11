@@ -59,7 +59,7 @@ export default function Home() {
         </p>
         {isNFTLand === false ? (
           <div>
-            <h4>Please purchase an NFT Land plot to gain access personalized content!</h4>
+            <h4>Purchase an NFT Land plot to gain access to personalized content!</h4>
             <img
               src="https://media.giphy.com/media/SWwXbEiVJ5z1gsjf5N/giphy.gif"
               alt="No NFT Land Owned"

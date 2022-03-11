@@ -30,4 +30,17 @@ contract NFTLands is ERC721Enumerable {
         _safeMint(receiver, newItemId);        
         return newItemId;
     }
+
+    // event Edit(uint256 tokenId, string cid);
+    // function editPlot(uint256 tokenId, string memory cid) public returns (uint256) {
+    //     if (_exists(tokenId) && ownerOf(tokenId) == msg.sender) {
+    //         _setTokenURI(tokenId, cid);
+    //     } else {
+    //         _safeMint(msg.sender, tokenId);
+    //         _setTokenURI(tokenId, cid);
+    //     }
+    //     emit Edit(tokenId, cid);
+        
+    //     return tokenId;
+    // }
 }

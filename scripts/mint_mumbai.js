@@ -10,7 +10,7 @@ const friends = [
 
 async function main() {
   const NFTLand = await hre.ethers.getContractFactory("NFTLands");
-  const contract = NFTLand.attach("0xac18c8f477E0B86BEc4aD053be7f67132310A397");
+  const contract = NFTLand.attach("0x55935118d9c83430653146485Df9ecB3F977e1F0");
 
   //const signer0 = await ethers.provider.getSigner(0);
   //const nonce = await signer0.getTransactionCount();

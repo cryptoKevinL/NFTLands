@@ -4,7 +4,8 @@ import {ethers} from "ethers";
 import { v4 as uuidv4 } from 'uuid';
 import { withIronSession } from 'next-iron-session';
 const abi = require("../../NFTLands.json").abi;
-const contractAddress = "0xac18c8f477E0B86BEc4aD053be7f67132310A397";
+//const contractAddress = "0xac18c8f477E0B86BEc4aD053be7f67132310A397"; //RINKEBY
+const contractAddress = "0x55935118d9c83430653146485Df9ecB3F977e1F0"; //Mumbai 
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 const urlV2API = `https://managed.mypinata.cloud/api/v1`;
 const API_KEY = process.env.PINATA_V2_API_KEY;
@@ -26,7 +27,8 @@ export default withSession(async (req, res) => {
   if(req.method === "POST") {
     try {         
       const message = req.session.get('message-session');
-      const provider = await new ethers.providers.JsonRpcProvider(`https://eth-rinkeby.alchemyapi.io/v2/${ALCHEMY_API_KEY}`);
+      //const provider = await new ethers.providers.JsonRpcProvider(`https://eth-rinkeby.alchemyapi.io/v2/${ALCHEMY_API_KEY}`);
+      const provider = await new ethers.providers.JsonRpcProvider(`https://polygon-mumbai.g.alchemy.com/v2/${ALCHEMY_API_KEY}`);
       const contract = await new ethers.Contract( contractAddress , abi , provider );      
       let nonce = "\x19Ethereum Signed Message:\n" + JSON.stringify(message).length + JSON.stringify(message)
       nonce = util.keccak(Buffer.from(nonce, "utf-8"))
