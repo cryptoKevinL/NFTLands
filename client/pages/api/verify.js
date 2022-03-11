@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { withIronSession } from 'next-iron-session';
 const abi = require("../../NFTLands.json").abi;
 //const contractAddress = "0xac18c8f477E0B86BEc4aD053be7f67132310A397"; //RINKEBY
-const contractAddress = "0x55935118d9c83430653146485Df9ecB3F977e1F0"; //Mumbai 
+const contractAddress = "0x67beb2f756f9a0191b79b6997005272f149bcb9F"; //Mumbai 
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 const urlV2API = `https://managed.mypinata.cloud/api/v1`;
 const API_KEY = process.env.PINATA_V2_API_KEY;
