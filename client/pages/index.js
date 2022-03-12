@@ -32,13 +32,16 @@ export default function Home() {
   }, [ethereum]);
   const handleProveIt = async () => {
     //  First we get the message to sign back from the server
-    const messageToSign = await axios.get("/api/verify");
+    // const messageToSign = await axios.get("/api/verify");
+    const messageToSign = { contractAddress, id: uuidv4() };
+    console.log(messageToSign);
+    
     const accounts = await ethereum.request({ method: "eth_requestAccounts" });
     const account = accounts[0];
     //console.log(account);
     const signedData = await ethereum.request({
       method: "personal_sign",
-      params: [JSON.stringify(messageToSign.data), account, messageToSign.data.id],
+      params: [JSON.stringify(messageToSign), account, messageToSign.id],
     });
     try {
       // const res = await axios.post("/api/verify", {
