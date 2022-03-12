@@ -4,7 +4,7 @@
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
 const hre = require("hardhat");
-const BASE_URI = "https://nft_lands.mypinata.cloud/ipfs/QmcCnEEmuMvxKeLmG4Qhos8HwLzeWSW8wWbpnM68XmjzrJ/";
+const BASE_URI = "https://nft_lands.mypinata.cloud/ipfs/QmPrGkkDz27DWpsexXXhmjP7gBef3YfftPhKvyqcXy4KzH/";
 
 async function main() {
   // If this script is run directly using `node` you may want to call compile
