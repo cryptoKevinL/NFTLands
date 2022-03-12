@@ -44,7 +44,6 @@ export default function Home() {
       params: [JSON.stringify(messageToSign), account, messageToSign.id],
     });
     try {
-      setIsNFTLand(false);
       // const res = await axios.post("/api/verify", {
       //   address: account,
       //   signature: signedData
@@ -124,6 +123,7 @@ export default function Home() {
       }
     //} 
     catch (error) {
+      setIsNFTLand(false);
       console.log(error);
       if (error.response && error.response.status === 401) {
         setIsNFTLand(false);
