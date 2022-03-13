@@ -1,8 +1,15 @@
 # NFT Worlds Land Parceling, and Content Access With Exclusive Ownership Content
+Minecraft development work was done under the repository at: https://github.com/iamcryptoboi/NFTLands
+
+This Repository handles the Web functionality for the NFT Lands EthGlobal BuildQuest project.
+
 Keep in mind that a .env file is needed with API private keys, we use Alchemy here. 
 API Keys for the Professional Pinata Plan which includes Submarine functionality is required to run the server.
 
-NFT Lands:
+Public facing website for demo in the 2022 EthGlobal BuildQuest:
+https://nft-lands-g5c8o.ondigitalocean.app/
+
+NFT Lands Web Build/Test Instructions:
 
 Initial contract, Verify UI and Piñata Submarine functionality based on this article:
 https://medium.com/pinata/how-to-manage-nft-visibility-18e9b7a76b8c
@@ -27,7 +34,7 @@ Using our project:
 6. Make sure new contract address of deployed contract is in pages/api/verify.js
 7. .env file here needs PINATA_V2_API_KEY, ALCHEMY_API_KEY (polygon), SECRET_COOKIE_PASSWORD=<random 32 chars>(not sure what this is)
 8. npm run dev
-9. Browse to localhost:3000
+9. Browse to localhost:3000 if running locally
 10. Click the only button
 11. Verify with MetaMask (from an address that was used in Mint Script, or /buyplot)
-12. Currently I have 4 Treasure Maps in Piñata Submarine, so that’s all we can do for now to show unique data for the first 4 minters.
+12. Currently 10 Treasure Maps are stored in Piñata Submarine, so for demo purposes unique data for the first 10 minters.
